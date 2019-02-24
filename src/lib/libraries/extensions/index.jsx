@@ -7,6 +7,8 @@ import penImage from './pen.png';
 import penInsetImage from './pen-small.svg';
 import videoImage from './video-sensing.png';
 import videoInsetImage from './video-sensing-small.svg';
+import rpiImage from './rpi.png';
+import rpiInsetImage from './rpi-small.svg';
 import translateImage from './translate.png';
 import translateInsetImage from './translate-small.png';
 import microbitImage from './microbit.png';
@@ -103,6 +105,28 @@ export default [
                 defaultMessage="Make your projects talk."
                 description="Description for the Text to speech extension"
                 id="gui.extension.text2speech.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Raspberry Pi"
+                description="Name for the Raspberry Pi extension"
+                id="gui.extension.rpi.name"
+            />
+        ),
+        extensionId: 'rpi',
+        collaborator: 'Open Knowledge Greece',
+        iconURL: rpiImage,
+        insetIconURL: rpiInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect to your Raspberry Pi."
+                description="Description for the Raspberry Pi extension"
+                id="gui.extension.rpi.description"
             />
         ),
         featured: true,
